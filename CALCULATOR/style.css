@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background: #222;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.display {
+  background: black;
+  color: white;
+  font-size: 2.5rem;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: right;
+  overflow-x: auto;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-gap: 15px;
+  justify-content: center;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Numbers → dark gray */
+button.number, button.dot {
+  background: #555;
+  color: white;
+}
+
+/* Operators → orange */
+button.operator {
+  background: orange;
+  color: white;
+}
+
+/* Hover effect */
+button:hover {
+  opacity: 0.85;
+}
+
+/* Clear button */
+.clear {
+  margin-top: 20px;
+  width: 90%;
+  height: 60px;
+  background: #aaa;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.clear:hover {
+  background: orange;
+  color: white;
+}
